@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logo</title>
+    </head>
+    <style>
+        #kotak{
+            fill: #88c589;
+            stroke:#59a35e;
+            stroke-width:1;
+        }
+        #tengah{
+            fill:url(#grad1);
+            stroke:#204880;
+            stroke-width:1;
+        }
+        #text{
+            fill:#F96815;
+            font-family:verdana;
+        }
+        #bintang{
+            fill:yellow;
+            stroke:white;
+        }
+    </style>
+<body>
+    <svg width="500" height="500">
+        <rect x="50" y="20" rx="40" ry="40" id="kotak" width="300" height="250"/>
+        <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+                <stop offset="90%" style="stop-color:#1a447c; stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0067c0; stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <polygon id="bintang" points="97,50 101,62 113,62 104,70 107,83 97,75 87,83 90,70 81,62 93,62"/>
+        <polygon id="bintang" points="147,40 151,52 163,52 154,60 157,73 147,65 137,73 140,60 131,52 143,52"/>
+        <polygon id="bintang" points="197,35 201,47 213,47 204,55 207,68 197,60 187,68 190,55 181,47 193,47"/>
+        <polygon id="bintang" points="247,40 251,52 263,52 254,60 257,73 247,65 237,73 240,60 231,52 243,52"/>
+        <polygon id="bintang" points="297,50 301,62 313,62 304,70 307,83 297,75 287,83 290,70 281,62 293,62"/>
+        <ellipse id="tengah" cx="200" cy="145" rx="135" ry="60"/>
+        <text id="text" font-size="65" x="132" y="168">UTY</text>
+    </svg>
+</body>
+</html>
